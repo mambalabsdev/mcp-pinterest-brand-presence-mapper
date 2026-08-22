@@ -1,0 +1,14 @@
+{
+  "mcpServers": {
+    "mamba-pinterest-brand-presence-mapper": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@mambalabsdev/mcp-pinterest-brand-presence-mapper"
+      ],
+      "env": {
+        "APIFY_TOKEN": "your-apify-token"
+      }
+    }
+  }
+}
