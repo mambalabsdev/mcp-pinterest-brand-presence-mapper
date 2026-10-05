@@ -1,0 +1,65 @@
+{
+  "title": "Pinterest Brand Presence Mapper - Followers for Clay Input",
+  "description": "Give a company domain and get the Pinterest business account with exact follower, pin and board counts. Counts are exact, not rounded. Free Apify plan users get 900 results per calendar month, reset monthly. Upgrade to any paid Apify plan for unlimited use: https://apify.com/pricing?fpr=mamba",
+  "type": "object",
+  "schemaVersion": 1,
+  "properties": {
+    "company_domain": {
+      "title": "Company Domain",
+      "type": "string",
+      "description": "Bare company domain, for example shopify.com. Supply this or a handle. With a domain the actor runs full discovery; with a handle it skips straight to the fetch.",
+      "editor": "textfield",
+      "prefill": "shopify.com"
+    },
+    "company_name": {
+      "title": "Company Name",
+      "type": "string",
+      "description": "Optional. Improves search accuracy and is what the identity gate checks a discovered profile against, so supplying it reduces wrong matches.",
+      "editor": "textfield",
+      "prefill": "Shopify"
+    },
+    "handle": {
+      "title": "Pinterest Handle",
+      "type": "string",
+      "description": "Optional. The Pinterest username from pinterest.com/<handle>. Supplying it skips discovery and, more importantly, skips the identity risk: Pinterest handles are rarely the domain stem.",
+      "editor": "textfield",
+      "prefill": ""
+    },
+    "includeFollowerCounts": {
+      "title": "Include Follower Counts",
+      "type": "string",
+      "description": "When \"true\" (default) the profile page is fetched and the counts are extracted. Set \"false\" to resolve the profile URL only, which is cheaper and needs no proxy. Sent as a string for Clay compatibility.",
+      "editor": "select",
+      "enum": [
+        "true",
+        "false"
+      ],
+      "enumTitles": [
+        "true (URL plus follower counts)",
+        "false (URL only, cheaper)"
+      ],
+      "default": "true"
+    },
+    "skipCache": {
+      "title": "Skip Cache",
+      "type": "string",
+      "description": "When \"false\" (default) a successful lookup is cached for seven days and reused. Set \"true\" to force a fresh fetch. Sent as a string for Clay compatibility.",
+      "editor": "select",
+      "enum": [
+        "false",
+        "true"
+      ],
+      "enumTitles": [
+        "false (use cache)",
+        "true (force fresh)"
+      ],
+      "default": "false"
+    },
+    "source_tag": {
+      "title": "Source Tag",
+      "type": "string",
+      "description": "Internal attribution tag set by Mamba Labs on published task examples. Not required, and nothing depends on it. Leave it empty.",
+      "editor": "textfield"
+    }
+  }
+}

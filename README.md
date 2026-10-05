@@ -46,11 +46,11 @@ Tool: `map_pinterest_brand_presence`
 
 | Input | Type | Meaning |
 |---|---|---|
-| `company_domain` | string | Bare company domain, for example shopify.com. Supply this or a handle. With a domain the actor runs full discovery; with a handle it skips straight to |
+| `company_domain` | string | Bare company domain, for example shopify.com. Supply this or a handle. With a domain the actor runs full discovery; with a handle it skips straight to the fetch. |
 | `company_name` | string | Optional. Improves search accuracy and is what the identity gate checks a discovered profile against, so supplying it reduces wrong matches. |
-| `handle` | string | Optional. The Pinterest username from pinterest.com/<handle>. Supplying it skips discovery and, more importantly, skips the identity risk: Pinterest h |
-| `includeFollowerCounts` | boolean | When "true" (default) the profile page is fetched and the counts are extracted. Set "false" to resolve the profile URL only, which is cheaper and need |
-| `skipCache` | boolean | When "false" (default) a successful lookup is cached for seven days and reused. Set "true" to force a fresh fetch. Sent as a string for Clay compatibi |
+| `handle` | string | Optional. The Pinterest username from pinterest.com/<handle>. Supplying it skips discovery and, more importantly, skips the identity risk: Pinterest handles are rarely the domain stem. |
+| `includeFollowerCounts` | boolean | Default true: the profile page is fetched and the follower counts are extracted. Set false to resolve the profile URL only, which is cheaper and needs no proxy. |
+| `skipCache` | boolean | Default false: a successful lookup is cached for seven days and reused. Set true to force a fresh fetch. |
 
 ## Reading the output
 
