@@ -1,7 +1,7 @@
 {
   "name": "mcp-pinterest-brand-presence-mapper",
   "displayName": "Pinterest Brand Presence Mapper",
-  "version": "1.0.0",
+  "version": "1.2.0",
   "description": "MCP server for the Mamba Labs Pinterest Brand Presence Mapper actor on Apify. Resolve a company domain to its Pinterest business account with exact follower, pin and board counts.",
   "author": {
     "name": "Mamba Labs",
