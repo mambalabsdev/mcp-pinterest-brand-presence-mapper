@@ -2,6 +2,8 @@
 
 [![Smithery](https://smithery.ai/badge/mambabuilt/mcp-pinterest-brand-presence-mapper)](https://smithery.ai/servers/mambabuilt/mcp-pinterest-brand-presence-mapper) [![Glama score](https://glama.ai/mcp/servers/mambalabsdev/mcp-pinterest-brand-presence-mapper/badges/score.svg)](https://glama.ai/mcp/servers/mambalabsdev/mcp-pinterest-brand-presence-mapper) [![npm version](https://img.shields.io/npm/v/@mambalabsdev/mcp-pinterest-brand-presence-mapper)](https://www.npmjs.com/package/@mambalabsdev/mcp-pinterest-brand-presence-mapper) [![npm downloads](https://img.shields.io/npm/dm/@mambalabsdev/mcp-pinterest-brand-presence-mapper)](https://www.npmjs.com/package/@mambalabsdev/mcp-pinterest-brand-presence-mapper) [![license](https://img.shields.io/github/license/mambalabsdev/mcp-pinterest-brand-presence-mapper)](https://github.com/mambalabsdev/mcp-pinterest-brand-presence-mapper/blob/main/LICENSE)
 
+<a href="https://mcprush.com/to/pinterest-brand-presence-mapper-mcp?ref=badge"><img width="380" height="200" src="https://mcprush.com/badge/pinterest-brand-presence-mapper-mcp/card.svg" alt="Pinterest Brand Presence Mapper MCP server" /></a>
+
 MCP server for the Mamba Labs **Pinterest Brand Presence Mapper** actor on Apify.
 
 Resolve a company domain to its Pinterest business account with exact follower, pin and board counts.
